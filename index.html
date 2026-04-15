@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVIDIA GeForce RTX | Powering the Future</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0b0b0b;
+            color: #eeeeee;
+        }
+
+        header {
+            background: linear-gradient(135deg, #76b900 0%, #000000 100%);
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 4px solid #76b900;
+        }
+
+        nav {
+            background: #1a1a1a;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #333;
+        }
+
+        nav a {
+            color: #76b900;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .wrapper {
+            display: flex;
+            max-width: 1200px;
+            margin: 40px auto;
+            gap: 40px;
+            padding: 20px;
+        }
+
+        .main-info { flex: 2; }
+
+        section {
+            scroll-margin-top: 80px; 
+            margin-bottom: 60px;
+        }
+
+        .rtx-card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 25px;
+        }
+
+        .highlight { color: #76b900; font-weight: bold; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid #333;
+        }
+
+        th { color: #76b900; }
+
+        .tier-container {
+            position: relative;
+            height: 650px;
+            margin-top: 20px;
+        }
+
+        .gpu-box {
+            width: 220px;
+            height: 250px;
+            position: absolute;
+            padding: 15px;
+            border: 2px solid #76b900;
+            background: #111;
+            text-align: center;
+        }
+
+        .gpu-box img {
+            width: 100%;
+            height: 140px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .rtx-3060 { top: 0; left: 0; }
+        .rtx-3070 { top: 180px; left: 240px; }
+        .rtx-3080 { top: 360px; left: 480px; }
+
+        aside {
+            flex: 1;
+            background: #111;
+            padding: 20px;
+            border: 1px dashed #444;
+            height: fit-content;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px;
+            font-size: 0.8rem;
+            color: #666;
+            background: #050505;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="top">
+        <h1>GEFORCE RTX</h1>
+        <p>THE ULTIMATE PLAY</p>
+    </header>
+
+    <nav>
+        <a href="#top">Home</a>
+        <a href="#tech">Technology</a>
+        <a href="#comparison">Comparison</a>
+        <a href="#requirements">Specs</a>
+    </nav>
+
+    <div class="wrapper">
+        <div class="main-info">
+            
+            <section id="tech">
+                <div class="rtx-card">
+                    <h2>Ray Tracing & AI</h2>
+                    <p>NVIDIA RTX is the most advanced platform for <span class="highlight">ray tracing</span> and AI technologies.</p>
+                    
+                    <table>
+                        <thead>
+                            <tr><th>Technology</th><th>Benefit</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Ray Tracing</td><td>Realistic light simulation.</td></tr>
+                            <tr><td>DLSS 3</td><td>AI-powered frame generation.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="comparison">
+                <h2>GPU Series Comparison</h2>
+                <div class="tier-container">
+                    <div class="gpu-box rtx-3060">
+                        <img src="HTML2/rtx3060.png" alt="RTX 3060">
+                        <strong>RTX 3060</strong>
+                        <p>1080p King</p>
+                    </div>
+                    <div class="gpu-box rtx-3070">
+                        <img src="HTML2/rtx3070.png" alt="RTX 3070">
+                        <strong>RTX 3070</strong>
+                        <p>1440p Master</p>
+                    </div>
+                    <div class="gpu-box rtx-3080">
+                        <img src="HTML2/rtx3080.jpg" alt="RTX 3080">
+                        <strong>RTX 3080</strong>
+                        <p>4K Beast</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <aside id="requirements">
+            <h3>System Requirements</h3>
+            <ul>
+                <li>PCIe 4.0 Slot</li>
+                <li>750W+ PSU</li>
+                <li>Windows 11</li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        &copy; 2026 NVIDIA Corporation.
+    </footer>
+
+</body>
+</html>
